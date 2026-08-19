@@ -17,15 +17,45 @@
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <!-- Mobile top bar -->
-  <div class="mobile-bar">
-    <span class="brand">BALABARATHI M</span>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-      <svg viewBox="0 0 24 24">
-        <path d="M4 7h16M4 12h16M4 17h16" />
-      </svg>
-    </button>
-  </div>
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- Replace .avatar contents with: <img src="images/profile.jpg" alt="BALABARATHI M"> sized to fill .avatar -->
+      <div class="avatar"><img src="profile.jpeg" alt="BALABARATHI M"></span></div>
+      <span class="brand">BALABARATHI M</span>
+    </div>
+    <nav class="topbar-nav">
+      <ul>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#notes" data-nav>Notes</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="topbar-right">
+      <div class="social-row">
+        <a href="https://github.com/BALABARATHI-M" aria-label="GitHub"><svg viewBox="0 0 24 24">
+            <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/bala-barathi-0426873a1/" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="2.4" />
+            <circle cx="6" cy="18" r="2.4" />
+            <circle cx="18" cy="9" r="2.4" />
+            <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
+          </svg></a>
+        <a href="mailto:iambalabarathi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+            <rect x="3" y="6" width="18" height="13" rx="1.5" />
+            <path d="M4 7l8 6 8-6" />
+          </svg></a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about">01. About</a></li>
@@ -35,397 +65,374 @@
       <li><a href="#contact">05. Contact</a></li>
     </ul>
     <div class="social-row">
-      <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+      <a href="https://github.com/BALABARATHI-M" aria-label="GitHub"><svg viewBox="0 0 24 24">
           <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
         </svg></a>
-      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+      <a href="https://www.linkedin.com/in/bala-barathi-0426873a1/" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
           <circle cx="6" cy="6" r="2.4" />
           <circle cx="6" cy="18" r="2.4" />
           <circle cx="18" cy="9" r="2.4" />
           <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
         </svg></a>
-      <a href="mailto:you@example.com" aria-label="Email"><svg viewBox="0 0 24 24">
+      <a href="mailto:iambalabarathi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
           <rect x="3" y="6" width="18" height="13" rx="1.5" />
           <path d="M4 7l8 6 8-6" />
         </svg></a>
     </div>
   </div>
 
-  <div class="shell">
+  <main>
+    <div class="content">
 
-    <!-- Fixed sidebar (desktop) -->
-    <aside class="sidebar">
-      <div class="sidebar-top">
-        <!-- Replace .avatar contents with: <img src="me.jpeg" alt="[Your Name]"> sized to fill .avatar -->
-        <div class="avatar">
-          <img src="profile.jpeg" alt="[Your Name]">
+      <section id="hero" class="reveal hero-section">
+        <div class="hero-eyebrow">Hello, I'm</div>
+        <h1 class="hero-name">BALABARATHI M</h1>
+        <div class="hero-typed-row">
+          <span class="hero-prompt">&gt;</span>
+          <span id="heroTyped"></span><span class="hero-cursor"></span>
         </div>
-        <!--<div class="eyebrow"><span class="dot"></span>Available for opportunities</div>-->
-        <h1>BALABARATHI M</h1>
-        <p class="role">Backend Developer building REST APIs with Go &amp; PostgreSQL.</p>
-        <div class="location">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" />
-            <circle cx="12" cy="9" r="2.3" />
-          </svg>
-          Karur, Tamil Nadu, IN
+        <p class="hero-sub">Backend Developer building REST APIs with Go &amp; PostgreSQL — currently interning at Arist
+          Techno Lab.</p>
+      </section>
+
+      <section id="about" class="reveal">
+        <div class="intro">
+          <p><strong>I'm a Computer Science graduate</strong> (2026) from Bharathidasan University, currently working as
+            a Backend Developer Intern at Arist Techno Lab — building REST APIs with Golang and PostgreSQL.</p>
+          <p>These days I'm going deep on backend fundamentals: API design, database structuring, and writing clean,
+            maintainable services. This page is where I document what I build and what I learn along the way.</p>
         </div>
-        <nav class="side-nav">
-          <ul>
-            <li><a href="#about" data-nav><span class="bar"></span>About</a></li>
-            <li><a href="#skills" data-nav><span class="bar"></span>Skills</a></li>
-            <li><a href="#projects" data-nav><span class="bar"></span>Projects</a></li>
-            <li><a href="#notes" data-nav><span class="bar"></span>Notes</a></li>
-            <li><a href="#contact" data-nav><span class="bar"></span>Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="sidebar-bottom">
-        <div class="social-row">
-          <a href="https://github.com/BALABARATHI-M" aria-label="GitHub"><svg viewBox="0 0 24 24">
-              <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
-            </svg></a>
-          <a href="https://www.linkedin.com/in/bala-barathi-0426873a1/" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
-              <circle cx="6" cy="6" r="2.4" />
-              <circle cx="6" cy="18" r="2.4" />
-              <circle cx="18" cy="9" r="2.4" />
-              <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
-            </svg></a>
-          <a href="mailto:iambalabarathi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+
+        <div class="sec-head" style="margin-top:56px;">
+          <span class="sec-num">01.1</span>
+          <h2>Timeline</h2>
+          <span class="rule"></span>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-date">2026 — Present</div>
+              <h3>Backend Developer Intern</h3>
+              <div class="tl-org">Arist Techno Lab</div>
+              <p>Building and maintaining REST APIs using Golang and PostgreSQL — API design, database schema work, and
+                a real Git-based development workflow.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line" style="visibility:hidden;"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-date">2023 — 2026</div>
+              <h3>B.Sc. Computer Science</h3>
+              <div class="tl-org">Bharathidasan University</div>
+              <p>Final year project: Smart GMS, a full-stack waste management system for Karur city.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-strip">
+          <div class="label">Certifications</div>
+          <div class="cert-grid">
+            <span>IBM Generative AI — Naan Mudhalvan</span>
+            <span>Python — Infosys Springboard</span>
+            <span>ServiceNow ITSM</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal">
+        <div class="sec-head">
+          <span class="sec-num">02</span>
+          <h2>Skills</h2>
+          <span class="rule"></span>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="cat-head">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="16" rx="1" />
+                <path d="M7 9l3 3-3 3M13 15h4" />
+              </svg>
+              <span class="cat-name">Languages</span>
+            </div>
+            <ul>
+              <li>Go</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="cat-head">
+              <svg viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg>
+              <span class="cat-name">Databases</span>
+            </div>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="cat-head">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="2.5" />
+                <circle cx="6" cy="18" r="2.5" />
+                <circle cx="18" cy="9" r="2.5" />
+                <path d="M6 8.5V15.5M8.2 7.2C11 8.5 14 9 15.8 9.3" />
+              </svg>
+              <span class="cat-name">Tools &amp; Practice</span>
+            </div>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>REST API Design</li>
+              <li>Postman</li>
+              <li>API Testing</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="cat-head">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4l16 8-16 8V4z" />
+              </svg>
+              <span class="cat-name">Web</span>
+            </div>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap 5</li>
+              <li>Leaflet.js</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <div class="sec-head">
+          <span class="sec-num">03</span>
+          <h2>Projects</h2>
+          <span class="rule"></span>
+        </div>
+
+        <div class="project">
+          <div class="mockup-browser">
+            <div class="mockup-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="url">smartgms.local</span>
+            </div>
+            <div class="mockup-map">
+              <div class="pin" style="top:34%; left:28%;"></div>
+              <div class="pin" style="top:58%; left:52%;"></div>
+              <div class="pin" style="top:40%; left:74%;"></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Full-Stack · Final Year Project</div>
+            <h3>Smart GMS — Smart Garbage Management System</h3>
+            <p>A web-based system built to solve real waste-tracking problems in Karur city — real-time garbage
+              collection tracking, route mapping, and status monitoring for municipal use.</p>
+            <p class="learned"><strong>What I learned:</strong> designing a full-stack system from scratch — database
+              schema, mapping integration with Leaflet.js, and building a usable interface for non-technical users.</p>
+            <div class="stack-row">
+              <span>PHP</span><span>MySQL</span><span>Bootstrap 5</span><span>Leaflet.js</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24">
+                <path d="M7 17L17 7M9 7h8v8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="mockup-terminal">
+            <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                class="label">api — zsh</span></div>
+            <div class="term-body" id="apiTerminal">
+              <div class="in"><span class="p">$</span> <span class="type-target"
+                  data-text="curl -s localhost:8080/api/v1/expenses/42"></span><span class="term-cursor"></span></div>
+              <div class="out fade-line" data-order="1">{<br>&nbsp;&nbsp;<span class="k">"id"</span>:
+                42,<br>&nbsp;&nbsp;<span class="k">"status"</span>: <span
+                  class="s">"approved"</span>,<br>&nbsp;&nbsp;<span class="k">"amount"</span>: 1250.00<br>}</div>
+              <div class="in fade-line" data-order="2" style="margin-top:8px;"><span class="p">$</span> <span
+                  class="type-target" data-text="go test ./... -v"></span></div>
+              <div class="out fade-line" data-order="3"><span class="s">ok</span>&nbsp;&nbsp;handlers&nbsp;&nbsp;0.041s
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Backend · Internship Work</div>
+            <h3>Backend API Development — Arist Techno Lab</h3>
+            <p>Currently building and maintaining REST APIs as part of a development team, working with Golang and
+              PostgreSQL.</p>
+            <p class="learned"><strong>What I'm learning:</strong> API design principles, structuring scalable backend
+              services, database schema design, and working within a real development workflow — Git, code reviews, and
+              testing.</p>
+            <div class="stack-row">
+              <span>Go</span><span>PostgreSQL</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="mockup-code">
+            <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                class="label">style.css</span></div>
+            <div class="code-body">
+              <div><span class="cm">/* built by hand, no framework */</span></div>
+              <div><span class="cls">.reveal</span> {</div>
+              <div>&nbsp;&nbsp;<span class="kw">opacity</span>: 0;</div>
+              <div>&nbsp;&nbsp;<span class="kw">transition</span>: all .6s ease;</div>
+              <div>}</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Frontend · Meta</div>
+            <h3>This Portfolio</h3>
+            <p>Hand-built this site from scratch — no template, no page builder — to control everything from the layout
+              system to the scroll behavior myself.</p>
+            <p class="learned"><strong>What I learned:</strong> structuring CSS without a framework, scroll-spy
+              navigation, and designing a visual identity from a blank page instead of a starter kit.</p>
+            <div class="stack-row">
+              <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
+            </div>
+            <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24">
+                <path d="M7 17L17 7M9 7h8v8" />
+              </svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="notes" class="reveal">
+        <div class="sec-head">
+          <span class="sec-num">04</span>
+          <h2>Notes from the Build</h2>
+          <span class="rule"></span>
+        </div>
+
+        <details class="note">
+          <summary>
+            <div>
+              <div class="note-meta"><span class="note-vol">Vol. 1</span><span class="note-tag">Go · Backend</span>
+              </div>
+              <h3>What I Learned Building My First REST API in Go</h3>
+            </div>
+            <div class="note-toggle"></div>
+          </summary>
+          <div class="note-inner">
+            <p>Building my first REST API in Go helped me move from understanding individual programming concepts to
+              understanding how a real backend application is structured. Before this, I knew syntax — variables,
+              functions, loops. Building an actual API forced me to understand how everything fits together as a system,
+              not isolated pieces.</p>
+            <ul>
+              <li><strong>Routes and handlers</strong> — how requests get matched to code, and why thin handlers keep a
+                codebase maintainable.</li>
+              <li><strong>Services</strong> — separating business logic from handlers made debugging and testing
+                genuinely easier, not just "cleaner."</li>
+              <li><strong>DTOs</strong> — why you don't expose database models directly; they let you control exactly
+                what data leaves the system.</li>
+              <li><strong>Validation</strong> — catching bad input at the boundary instead of chasing bugs deeper in the
+                system.</li>
+              <li><strong>Error handling</strong> — meaningful, consistent error responses instead of a blanket 500 for
+                everything.</li>
+              <li><strong>Caching</strong> — new territory: when to cache, what to invalidate, and how it can quietly
+                introduce bugs.</li>
+            </ul>
+            <div class="note-takeaway">A "simple CRUD API" is never really simple — there's a lot of thinking behind
+              making it reliable, maintainable, and predictable.</div>
+          </div>
+        </details>
+
+        <details class="note">
+          <summary>
+            <div>
+              <div class="note-meta"><span class="note-vol">Vol. 2</span><span class="note-tag">PostgreSQL ·
+                  Databases</span></div>
+              <h3>Understanding PostgreSQL: Joins, Indexes, and Things I Got Wrong</h3>
+            </div>
+            <div class="note-toggle"></div>
+          </summary>
+          <div class="note-inner">
+            <p>Working with PostgreSQL taught me that good backend development isn't just about writing queries that
+              work — it's about understanding why they work, and what happens when they don't.</p>
+            <ul>
+              <li><strong>Table relationships</strong> — foreign keys changed how I think about schema design, not just
+                querying after the fact.</li>
+              <li><strong>Joins</strong> — learning to think about which join actually answers the question I'm asking,
+                not just one that returns data.</li>
+              <li><strong>Indexes</strong> — not a "just in case" addition; they're a trade-off between read speed and
+                write cost.</li>
+              <li><strong>Nullable fields</strong> — a small schema decision that caused real bugs in joins and filters.
+              </li>
+              <li><strong>Debugging migrations</strong> — going straight to the database to see what's actually
+                happening, instead of trusting the ORM blindly.</li>
+            </ul>
+            <div class="note-takeaway">I stopped treating the ORM as a black box. Understanding what's actually
+              happening at the database level made me a lot more confident debugging real issues.</div>
+          </div>
+        </details>
+      </section>
+
+      <section id="contact" class="reveal">
+        <div class="sec-head">
+          <span class="sec-num">05</span>
+          <h2>Contact</h2>
+          <span class="rule"></span>
+        </div>
+        <div class="contact-cta">
+          <h2>Let's build something reliable.</h2>
+          <p>Open to entry-level backend and full-stack roles, and always up for a conversation about APIs, databases,
+            or anything I'm currently building.</p>
+          <a href="mailto:iambalabarathi@gmail.com" class="big-email">
+            <svg viewBox="0 0 24 24">
               <rect x="3" y="6" width="18" height="13" rx="1.5" />
               <path d="M4 7l8 6 8-6" />
-            </svg></a>
+            </svg>
+            iambalabarathi@gmail.com
+          </a>
+          <div class="contact-socials">
+            <a href="#"><svg viewBox="0 0 24 24">
+                <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
+              </svg>GitHub</a>
+            <a href="#"><svg viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="2.4" />
+                <circle cx="6" cy="18" r="2.4" />
+                <circle cx="18" cy="9" r="2.4" />
+                <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
+              </svg>LinkedIn</a>
+          </div>
         </div>
-        <div class="credit">Built from scratch · 2026</div>
+      </section>
+
+    </div>
+
+    <footer>
+      <span>© 2026 BALABARATHI M</span>
+      <div class="social-row">
+        <a href="https://github.com/BALABARATHI-M" aria-label="GitHub"><svg viewBox="0 0 24 24">
+            <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/bala-barathi-0426873a1/" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="2.4" />
+            <circle cx="6" cy="18" r="2.4" />
+            <circle cx="18" cy="9" r="2.4" />
+            <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
+          </svg></a>
+        <a href="mailto:iambalabarathi@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+            <rect x="3" y="6" width="18" height="13" rx="1.5" />
+            <path d="M4 7l8 6 8-6" />
+          </svg></a>
       </div>
-    </aside>
-
-    <main>
-      <div class="content">
-
-        <section id="about" class="reveal">
-          <div class="intro">
-            <p><strong>I'm a Computer Science graduate</strong> (2026) from Bharathidasan University, currently working
-              as a Backend Developer Intern at Arist Techno Lab — building REST APIs with Golang and PostgreSQL.</p>
-            <p>These days I'm going deep on backend fundamentals: API design, database structuring, and writing clean,
-              maintainable services. This page is where I document what I build and what I learn along the way.</p>
-          </div>
-
-          <div class="sec-head" style="margin-top:56px;">
-            <span class="sec-num">01.1</span>
-            <h2>Timeline</h2>
-            <span class="rule"></span>
-          </div>
-          <div class="timeline">
-            <div class="tl-item">
-              <div class="tl-marker">
-                <div class="tl-dot"></div>
-                <div class="tl-line"></div>
-              </div>
-              <div class="tl-content">
-                <div class="tl-date">2026 — Present</div>
-                <h3>Backend Developer Intern</h3>
-                <div class="tl-org">Arist Techno Lab</div>
-                <p>Building and maintaining REST APIs using Golang and PostgreSQL — API design, database schema work,
-                  and a real Git-based development workflow.</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-marker">
-                <div class="tl-dot"></div>
-                <div class="tl-line" style="visibility:hidden;"></div>
-              </div>
-              <div class="tl-content">
-                <div class="tl-date">2023 — 2026</div>
-                <h3>B.Sc. Computer Science</h3>
-                <div class="tl-org">Bharathidasan University</div>
-                <p>Final year project: Smart GMS, a full-stack waste management system for Karur city.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-strip">
-            <div class="label">Certifications</div>
-            <div class="cert-grid">
-              <span>IBM Generative AI — Naan Mudhalvan</span>
-              <span>Python — Infosys Springboard</span>
-              <span>ServiceNow ITSM</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" class="reveal">
-          <div class="sec-head">
-            <span class="sec-num">02</span>
-            <h2>Skills</h2>
-            <span class="rule"></span>
-          </div>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <div class="cat-head">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="4" width="18" height="16" rx="1" />
-                  <path d="M7 9l3 3-3 3M13 15h4" />
-                </svg>
-                <span class="cat-name">Languages</span>
-              </div>
-              <ul>
-                <li>Go</li>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="cat-head">
-                <svg viewBox="0 0 24 24">
-                  <ellipse cx="12" cy="5" rx="8" ry="3" />
-                  <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
-                </svg>
-                <span class="cat-name">Databases</span>
-              </div>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="cat-head">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="6" cy="6" r="2.5" />
-                  <circle cx="6" cy="18" r="2.5" />
-                  <circle cx="18" cy="9" r="2.5" />
-                  <path d="M6 8.5V15.5M8.2 7.2C11 8.5 14 9 15.8 9.3" />
-                </svg>
-                <span class="cat-name">Tools &amp; Practice</span>
-              </div>
-              <ul>
-                <li>Git / GitHub</li>
-                <li>REST API Design</li>
-                <li>Postman</li>
-                <li>API Testing</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="cat-head">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 4l16 8-16 8V4z" />
-                </svg>
-                <span class="cat-name">Web</span>
-              </div>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap 5</li>
-                <li>Leaflet.js</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="reveal">
-          <div class="sec-head">
-            <span class="sec-num">03</span>
-            <h2>Projects</h2>
-            <span class="rule"></span>
-          </div>
-
-          <div class="project">
-            <div class="mockup-browser">
-              <div class="mockup-bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                <span class="url">smartgms.local</span>
-              </div>
-              <div class="mockup-map">
-                <div class="pin" style="top:34%; left:28%;"></div>
-                <div class="pin" style="top:58%; left:52%;"></div>
-                <div class="pin" style="top:40%; left:74%;"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-tag">Full-Stack · Final Year Project</div>
-              <h3>Smart GMS — Smart Garbage Management System</h3>
-              <p>A web-based system built to solve real waste-tracking problems in Karur city — real-time garbage
-                collection tracking, route mapping, and status monitoring for municipal use.</p>
-              <p class="learned"><strong>What I learned:</strong> designing a full-stack system from scratch — database
-                schema, mapping integration with Leaflet.js, and building a usable interface for non-technical users.
-              </p>
-              <div class="stack-row">
-                <span>PHP</span><span>MySQL</span><span>Bootstrap 5</span><span>Leaflet.js</span><span>JavaScript</span>
-              </div>
-              <a href="https://github.com/BALABARATHI-M/smart-garbage-management-system" class="project-link">View on GitHub <svg viewBox="0 0 24 24">
-                  <path d="M7 17L17 7M9 7h8v8" />
-                </svg></a>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="mockup-terminal">
-              <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
-                  class="label">api — zsh</span></div>
-              <div class="term-body">
-                <div class="in"><span class="p">$</span> curl -s localhost:8080/api/v1/expenses/42</div>
-                <div class="out">{<br>&nbsp;&nbsp;<span class="k">"id"</span>: 42,<br>&nbsp;&nbsp;<span
-                    class="k">"status"</span>: <span class="s">"approved"</span>,<br>&nbsp;&nbsp;<span
-                    class="k">"amount"</span>: 1250.00<br>}</div>
-                <div class="in" style="margin-top:8px;"><span class="p">$</span> go test ./... -v</div>
-                <div class="out"><span class="s">ok</span>&nbsp;&nbsp;handlers&nbsp;&nbsp;0.041s</div>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-tag">Backend · Internship Work</div>
-              <h3>Backend API Development — Arist Techno Lab</h3>
-              <p>Currently building and maintaining REST APIs as part of a development team, working with Golang and
-                PostgreSQL.</p>
-              <p class="learned"><strong>What I'm learning:</strong> API design principles, structuring scalable backend
-                services, database schema design, and working within a real development workflow — Git, code reviews,
-                and testing.</p>
-              <div class="stack-row">
-                <span>Go</span><span>PostgreSQL</span><span>REST APIs</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="mockup-code">
-              <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
-                  class="label">style.css</span></div>
-              <div class="code-body">
-                <div><span class="cm">/* built by hand, no framework */</span></div>
-                <div><span class="cls">.reveal</span> {</div>
-                <div>&nbsp;&nbsp;<span class="kw">opacity</span>: 0;</div>
-                <div>&nbsp;&nbsp;<span class="kw">transition</span>: all .6s ease;</div>
-                <div>}</div>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-tag">Frontend · Meta</div>
-              <h3>This Portfolio</h3>
-              <p>Hand-built this site from scratch — no template, no page builder — to control everything from the
-                layout system to the scroll behavior myself.</p>
-              <p class="learned"><strong>What I learned:</strong> structuring CSS without a framework, scroll-spy
-                navigation, and designing a visual identity from a blank page instead of a starter kit.</p>
-              <div class="stack-row">
-                <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
-              </div>
-              <a href="https://github.com/BALABARATHI-M/Digital-Portfolio" class="project-link">View on GitHub <svg viewBox="0 0 24 24">
-                  <path d="M7 17L17 7M9 7h8v8" />
-                </svg></a>
-            </div>
-          </div>
-        </section>
-
-        <section id="notes" class="reveal">
-          <div class="sec-head">
-            <span class="sec-num">04</span>
-            <h2>Notes from the Build</h2>
-            <span class="rule"></span>
-          </div>
-
-          <details class="note">
-            <summary>
-              <div>
-                <div class="note-meta"><span class="note-vol">Vol. 1</span><span class="note-tag">Go · Backend</span>
-                </div>
-                <h3>What I Learned Building My First REST API in Go</h3>
-              </div>
-              <div class="note-toggle"></div>
-            </summary>
-            <div class="note-inner">
-              <p>Building my first REST API in Go helped me move from understanding individual programming concepts to
-                understanding how a real backend application is structured. Before this, I knew syntax — variables,
-                functions, loops. Building an actual API forced me to understand how everything fits together as a
-                system, not isolated pieces.</p>
-              <ul>
-                <li><strong>Routes and handlers</strong> — how requests get matched to code, and why thin handlers keep
-                  a codebase maintainable.</li>
-                <li><strong>Services</strong> — separating business logic from handlers made debugging and testing
-                  genuinely easier, not just "cleaner."</li>
-                <li><strong>DTOs</strong> — why you don't expose database models directly; they let you control exactly
-                  what data leaves the system.</li>
-                <li><strong>Validation</strong> — catching bad input at the boundary instead of chasing bugs deeper in
-                  the system.</li>
-                <li><strong>Error handling</strong> — meaningful, consistent error responses instead of a blanket 500
-                  for everything.</li>
-                <li><strong>Caching</strong> — new territory: when to cache, what to invalidate, and how it can quietly
-                  introduce bugs.</li>
-              </ul>
-              <div class="note-takeaway">A "simple CRUD API" is never really simple — there's a lot of thinking behind
-                making it reliable, maintainable, and predictable.</div>
-            </div>
-          </details>
-
-          <details class="note">
-            <summary>
-              <div>
-                <div class="note-meta"><span class="note-vol">Vol. 2</span><span class="note-tag">PostgreSQL ·
-                    Databases</span></div>
-                <h3>Understanding PostgreSQL: Joins, Indexes, and Things I Got Wrong</h3>
-              </div>
-              <div class="note-toggle"></div>
-            </summary>
-            <div class="note-inner">
-              <p>Working with PostgreSQL taught me that good backend development isn't just about writing queries that
-                work — it's about understanding why they work, and what happens when they don't.</p>
-              <ul>
-                <li><strong>Table relationships</strong> — foreign keys changed how I think about schema design, not
-                  just querying after the fact.</li>
-                <li><strong>Joins</strong> — learning to think about which join actually answers the question I'm
-                  asking, not just one that returns data.</li>
-                <li><strong>Indexes</strong> — not a "just in case" addition; they're a trade-off between read speed and
-                  write cost.</li>
-                <li><strong>Nullable fields</strong> — a small schema decision that caused real bugs in joins and
-                  filters.</li>
-                <li><strong>Debugging migrations</strong> — going straight to the database to see what's actually
-                  happening, instead of trusting the ORM blindly.</li>
-              </ul>
-              <div class="note-takeaway">I stopped treating the ORM as a black box. Understanding what's actually
-                happening at the database level made me a lot more confident debugging real issues.</div>
-            </div>
-          </details>
-        </section>
-
-        <section id="contact" class="reveal">
-          <div class="sec-head">
-            <span class="sec-num">05</span>
-            <h2>Contact</h2>
-            <span class="rule"></span>
-          </div>
-          <div class="contact-cta">
-            <h2>Let's build something reliable.</h2>
-            <p>Open to entry-level backend and full-stack roles, and always up for a conversation about APIs, databases,
-              or anything I'm currently building.</p>
-            <a href="mailto:iambalabarathi@gmail.com" class="big-email">
-              <svg viewBox="0 0 24 24">
-                <rect x="3" y="6" width="18" height="13" rx="1.5" />
-                <path d="M4 7l8 6 8-6" />
-              </svg>
-              iambalabarathi@gmail.com
-            </a>
-            <div class="contact-socials">
-              <a href="https://github.com/BALABARATHI-M"><svg viewBox="0 0 24 24">
-                  <path d="M8 7L3 12l5 5M16 7l5 5-5 5" />
-                </svg>GitHub</a>
-              <a href="https://www.linkedin.com/in/bala-barathi-0426873a1/"><svg viewBox="0 0 24 24">
-                  <circle cx="6" cy="6" r="2.4" />
-                  <circle cx="6" cy="18" r="2.4" />
-                  <circle cx="18" cy="9" r="2.4" />
-                  <path d="M6 8.4V15.6M8.2 7.1C11 8.4 14 9 15.8 9.3" />
-                </svg>LinkedIn</a>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <footer>
-        <span>© 2026 BALABARATHI M </span>
-        <a href="#about" class="back-top">Back to top ↑</a>
-      </footer>
-    </main>
-
-  </div>
+      <a href="#about" class="back-top">Back to top ↑</a>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
